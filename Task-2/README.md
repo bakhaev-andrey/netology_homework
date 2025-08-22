@@ -21,10 +21,10 @@ git add .
 git commit -m "Initial commit: ДЗ 8-03 GitLab CI/CD"
 
 # Добавить remote origin на GitLab (заменить URL на ваш)
-git remote add origin http://localhost:8080/root/8-03-gitlab-ci.git
+git remote add origin https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci.git
 
 # Или изменить существующий origin
-git remote set-url origin http://localhost:8080/root/8-03-gitlab-ci.git
+git remote set-url origin https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci.git
 
 # Запушить в GitLab
 git push -u origin main
