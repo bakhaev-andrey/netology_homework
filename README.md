@@ -91,15 +91,13 @@ deploy_job:
 ![Настройки runner](./Task-2/screenshots/runner.png)
 ![Статус runner](./Task-2/screenshots/runner1.png)
 
+**Скриншоты пайплайна (для сдачи Task-2):**
+- build: `Task-2/screenshots/build.png`
+- test: `Task-2/screenshots/test.png`
+- deploy: `Task-2/screenshots/deploy.png`
+
 ---
 
 ### Дополнительные файлы
 
-**Основные файлы проекта:**
-- [CHECKLIST.md](./CHECKLIST.md) - пошаговый чек-лист выполнения
-- [DEPLOYMENT.md](./DEPLOYMENT.md) - инструкции по развертыванию на сервере
-- [SUMMARY.md](./SUMMARY.md) - сводка по подготовленным материалам
-- [FINAL_REPORT.md](./FINAL_REPORT.md) - итоговый отчет о выполнении
-
 **Ссылка на GitLab проект:** https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci
-# Test change to trigger pipeline
