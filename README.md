@@ -98,9 +98,7 @@ deploy_job:
 ![Статус runner](./Task-2/screenshots/runner1.png)
 
 **Скриншоты пайплайна (для сдачи Task-2):**
-- build: `Task-2/screenshots/build.png`
-- test: `Task-2/screenshots/test.png`
-- deploy: `Task-2/screenshots/deploy.png`
+![build](./Task-2/screenshots/build.png)
 
 ---
 
