@@ -1,52 +1,24 @@
 # Домашнее задание к занятию "GitLab CI/CD" - Бахаев Андрей
 
-## Структура проекта
+### Инструкция по выполнению домашнего задания
 
-- **Task-1/** - Развертывание GitLab и регистрация Docker runner
-  - `gitlab-vagrant/` - файлы из задания (Vagrantfile и др.)
-  - `screenshots/` - скриншоты настроек раннера в проекте
-  - `README.md` - пошаговые команды выполнения
-- **Task-2/** - Репозиторий в GitLab и пайплайн
-  - `screenshots/` - скриншоты успешных сборок
-  - `README.md` - пошаговые команды выполнения
-- `.gitlab-ci.yml` - файл пайплайна для проекта
+   1. Сделайте `fork` данного репозитория к себе в Github и переименуйте его по названию или номеру занятия, например, https://github.com/имя-вашего-репозитория/git-hw или  https://github.com/имя-вашего-репозитория/8-3-gitlab-ci-hw).
+   2. Выполните клонирование данного репозитория к себе на ПК с помощью команды `git clone`.
+   3. Выполните домашнее задание и заполните у себя локально этот файл README.md:
+      - впишите вверху название занятия и вашу фамилию и имя
+      - в каждом задании добавьте решение в требуемом виде (текст/код/скриншоты/ссылка)
+      - для корректного добавления скриншотов воспользуйтесь [инструкцией "Как вставить скриншот в шаблон с решением](https://github.com/netology-code/sys-pattern-homework/blob/main/screen-instruction.md)
+      - при оформлении используйте возможности языка разметки md (коротко об этом можно посмотреть в [инструкции  по MarkDown](https://github.com/netology-code/sys-pattern-homework/blob/main/md-instruction.md))
+   4. После завершения работы над домашним заданием сделайте коммит (`git commit -m "comment"`) и отправьте его на Github (`git push origin`);
+   5. Для проверки домашнего задания преподавателем в личном кабинете прикрепите и отправьте ссылку на решение в виде md-файла в вашем Github.
+   6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе "Вопросы по заданию" в личном кабинете.
+   
+Желаем успехов в выполнении домашнего задания!
 
-## Ссылка на материалы задания
-[GitLab материалы](https://github.com/netology-code/sdvps-materials/tree/main/gitlab)
+### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
-## Подготовленные файлы
-
-### Основные файлы
-- `README.md` - описание ДЗ и структуры проекта
-- `.gitlab-ci.yml` - готовый пайплайн CI/CD
-- `CHECKLIST.md` - пошаговый чек-лист выполнения
-
-### Task-1: Развертывание GitLab
-- `Task-1/README.md` - подробные инструкции
-- `Task-1/gitlab-vagrant/` - файлы для Vagrant
-  - `Vagrantfile` - конфигурация VM
-  - `docker-compose.yaml` - Docker Compose для GitLab
-  - `GITLAB.md` - оригинальная инструкция
-  - `runner-config.toml` - пример конфигурации runner
-- `Task-1/quick-start.sh` - скрипт быстрого старта
-
-### Task-2: CI/CD пайплайн
-- `Task-2/README.md` - инструкции по настройке
-- `Task-2/quick-start.sh` - скрипт настройки репозитория
-
-## Быстрый старт на удаленном сервере
-
-1. **Скопируйте архив** `8-03-GitLab-CI-complete.tar.gz` на сервер
-2. **Распакуйте** и перейдите в папку `8-03-GitLab-CI`
-3. **Выполните Task-1**: развертывание GitLab через Vagrant и настройка Docker runner
-4. **Выполните Task-2**: настройка репозитория и проверка CI/CD пайплайна
-
-## Детальные инструкции
-
-- `DEPLOYMENT.md` - пошаговые инструкции по развертыванию на сервере
-- `CHECKLIST.md` - чек-лист выполнения всех задач
-- `Task-1/README.md` - инструкции по Task-1
-- `Task-2/README.md` - инструкции по Task-2
+1. [GitLab материалы](https://github.com/netology-code/sdvps-materials/tree/main/gitlab)
+2. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
 
 ---
 
@@ -60,6 +32,19 @@
 4. Зарегистрируйте gitlab-runner для проекта в режиме Docker
 5. Приложите скриншоты с настройками раннера
 
+**Файлы для выполнения «Задание №1» (в папке `Task-1`):**
+- [README.md](./Task-1/README.md) - подробные инструкции по выполнению
+- [gitlab-vagrant/](./Task-1/gitlab-vagrant/) - файлы для Vagrant (Vagrantfile, docker-compose.yaml, GITLAB.md)
+- [quick-start.sh](./Task-1/quick-start.sh) - скрипт быстрого старта
+- [screenshots/](./Task-1/screenshots/) - скриншоты процесса выполнения
+
+**Скриншоты выполнения:**
+![Главная страница GitLab](./Task-1/screenshots/gitlab.png)
+![Процесс установки](./Task-1/screenshots/установка.png)
+![Успешный push в GitLab](./Task-1/screenshots/push.png)
+
+---
+
 ### Задание 2
 
 **Запушьте репозиторий на GitLab и создайте .gitlab-ci.yml**
@@ -68,3 +53,52 @@
 2. Создайте .gitlab-ci.yml с необходимыми этапами
 3. Запушьте изменения
 4. Приложите файл .gitlab-ci.yml и скриншоты успешных сборок
+
+**Файлы для выполнения «Задание №2» (в папке `Task-2`):**
+- [README.md](./Task-2/README.md) - инструкции по настройке
+- [quick-start.sh](./Task-2/quick-start.sh) - скрипт настройки репозитория
+- [screenshots/](./Task-2/screenshots/) - скриншоты успешных сборок
+
+**Файл .gitlab-ci.yml:**
+```yaml
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "Сборка проекта..."
+    - echo "Установка зависимостей..."
+    - echo "Компиляция завершена"
+
+test_job:
+  stage: test
+  script:
+    - echo "Запуск тестов..."
+    - echo "Unit тесты прошли"
+    - echo "Интеграционные тесты прошли"
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Деплой в production..."
+    - echo "Деплой завершен успешно"
+```
+
+**Скриншоты выполнения:**
+![Настройки runner](./Task-2/screenshots/runner.png)
+![Статус runner](./Task-2/screenshots/runner1.png)
+
+---
+
+### Дополнительные файлы
+
+**Основные файлы проекта:**
+- [CHECKLIST.md](./CHECKLIST.md) - пошаговый чек-лист выполнения
+- [DEPLOYMENT.md](./DEPLOYMENT.md) - инструкции по развертыванию на сервере
+- [SUMMARY.md](./SUMMARY.md) - сводка по подготовленным материалам
+- [FINAL_REPORT.md](./FINAL_REPORT.md) - итоговый отчет о выполнении
+
+**Ссылка на GitLab проект:** https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci
