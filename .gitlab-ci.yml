@@ -1,0 +1,24 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "Сборка проекта..."
+    - echo "Установка зависимостей..."
+    - echo "Компиляция завершена"
+
+test_job:
+  stage: test
+  script:
+    - echo "Запуск тестов..."
+    - echo "Unit тесты прошли"
+    - echo "Интеграционные тесты прошли"
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Деплой в production..."
+    - echo "Деплой завершен успешно"
