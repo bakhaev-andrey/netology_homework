@@ -102,3 +102,4 @@ deploy_job:
 - [FINAL_REPORT.md](./FINAL_REPORT.md) - итоговый отчет о выполнении
 
 **Ссылка на GitLab проект:** https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci
+# Test change to trigger pipeline
