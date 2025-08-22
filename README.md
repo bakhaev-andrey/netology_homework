@@ -68,6 +68,8 @@ stages:
 
 build_job:
   stage: build
+  tags:
+    - docker
   script:
     - echo "Сборка проекта..."
     - echo "Установка зависимостей..."
@@ -75,6 +77,8 @@ build_job:
 
 test_job:
   stage: test
+  tags:
+    - docker
   script:
     - echo "Запуск тестов..."
     - echo "Unit тесты прошли"
@@ -82,6 +86,8 @@ test_job:
 
 deploy_job:
   stage: deploy
+  tags:
+    - docker
   script:
     - echo "Деплой в production..."
     - echo "Деплой завершен успешно"
@@ -98,6 +104,4 @@ deploy_job:
 
 ---
 
-### Дополнительные файлы
-
-**Ссылка на GitLab проект:** https://gitlab.bakhaevtech.com/root/netology-8-03-gitlab-ci
+**Ссылка на GitHub проект:** https://github.com/bakhaev-andrey/netology_homework/tree/github-main/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20CI-CD
